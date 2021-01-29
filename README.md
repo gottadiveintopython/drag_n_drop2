@@ -53,7 +53,7 @@ Once a drag has started, it will pass one of the following three paths:
 - If the draggable gets dropped to a droppable, and gets denied by it,
   the draggable will fire **on_drag_fail** event. And
   `KXDraggableBehavior.drag_context.droppable` will be set to the draggable.
-  ("gets denied" means `droppable.accepts_drag()` returned False)
+  ("gets denied" means `droppable.accepts_drag()` returns False)
 - If `draggable.drag_canel()` is called before the user lift off his/her
   finger, neither of **on_drag_fail** nor **on_drag_success** will be fired.
   And `KXDraggableBehavior.drag_context.cancelled` will be set to True.
